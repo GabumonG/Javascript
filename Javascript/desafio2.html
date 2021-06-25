@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio: Nacionalidade</title>
+    <style>
+        body{
+            font: normal 18pt arial;
+            background-color: white;
+            text-align: center;
+        }
+        input{
+            font: normal 18pt arial;
+            width: 200px;
+        }
+        h1{
+            color: #990066;
+        }
+    </style>
+</head>
+    <h1>Saiba se você é brasileiro!!!</h1>
+    <p>Em qual país você nasceu?</p>
+    <input type="text" name="pais" id="pais">
+    <input type="button" value="Verificar" onclick="checar()">
+    <div id="nac">...</div>
+<body>
+    <script>
+        function checar(){
+        var pais = window.document.querySelector('input#pais').value
+        var nac = window.document.getElementById('nac')
+
+        if(pais == 'Brasil' || pais == 'brasil'){
+            nac.innerHTML = `</br>Você é Brasileiro(a)!`
+        }
+        else{
+            nac.innerHTML = `</br>Você não é Brasileiro(a)!`
+        }
+    }
+    </script>
+</body>
+</html>
