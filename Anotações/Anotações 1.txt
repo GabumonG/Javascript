@@ -1,0 +1,75 @@
+Para mostrar um pop-up na tela:
+windows.alert('conteúdo')
+windows.confirm('conteúdo')
+windows.prompt('conteúdo')
+
+alert - é apenas uma mensagem e só tem a opção de 'ok'
+confirm - é apenas uma mensagem também, mas tem opção de 'ok' e 'cancel'
+prompt - é possível interagir com o usuário, pois ele solicita o envio de dados e confirmação com 'ok'
+
+Consderando que no Javascript o '+' serve tanto para adição quanto para concatenação é importante entender que ele irá tratar o dado com base no seguinte contexto:
+number + number = adição
+string + string = concatenação  
+
+Para realizar a conversão de dados (de string para número) utiliza-se o seguinte comando:
+Number.parseInt(n)
+Number.parseFloat(n)
+Number(n)
+
+De número para string usa-se:
+String(n)
+n.toString()
+
+É possível fazer a concatenação de variáveis sem precisar abrir e fechar aspas, para isso é utilizado uma técnica chamada Template Strings, segue exemplo mostrando a diferença entre o uso delas:
+var s = 'Javascript'
+'Estou aprendendo' + s //concatenação
+`Estou aprendendo ${s}` //Template String usando place holder ${}
+ 
+Outros comandos:
+var s = 'Javascript'
+s.lenght   //conta quantos caracteres tem
+s.toUpperCase()   //muda as letras para maiúsculas
+s.toLowerCase()   //muda as letras para minúsculas
+
+var n1 = 15.50
+n1.toFixed(2)   //para 2 casas após a vírgula
+n1.toFixed(2).replace('.', ',') para 2 casas após a vírgula e substituir ponto por vírgula
+n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+n1.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})
+n1.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'})
+
+var n = 3
+n = n + 4 é a mesma coisa que escrever n += 4
+n = n - 4 é a mesma coisa que escrever n -= 4
+n = n * 4 é a mesma coisa que escrever n *= 4
+n = n / 4 é a mesma coisa que escrever n /= 4
+n = n ** 4 é a mesma coisa que escrever n **= 4
+n = n % 4 é a mesma coisa que escrever n %= 4
+
+var x = 5
+x = x + 1 é a mesma coisa que escrever x ++
+x = x - 1 é a mesma coisa que escrever x --
+
+Operador ternario precisa de três operandos e é constituído pelo seguinte esquema:
+
+teste ? true : false
+
+exemplo:
+var media = 7
+
+media > 6 ? 'APROVADO' : 'REPROVADO'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
