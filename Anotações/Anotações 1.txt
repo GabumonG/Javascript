@@ -59,8 +59,36 @@ var media = 7
 
 media > 6 ? 'APROVADO' : 'REPROVADO'
 
+Sobre DOM
+Tipos de seleção:
+- Por Marca
+    getElementsByTagName()
+    ***Quando Elements está no plural é necessário informar o número de aparição do elemento
 
+- Por ID
+    getElementById()
 
+- Por Nome
+    getElementsByName()
+
+- Por Classe
+    getElementByClassName
+- Por Seletor
+    querySelector()
+    querySelectorAll()
+    ex.:
+    querySelector('div.msg') -> colocar o componente do html informando a classe ou id como o .msg do exemplo
+
+innerText - Pega o texto sem formatação
+innerHTML - Pega o HTML do elemento selecionado
+
+Eventos DOM (alguns exemplos de eventos com mouse):
+mouseenter - quando o cursor entra em algum determinado elemento
+mousemove - quando o cursor se move
+mousedown - quando é pressionado o botão do mouse
+mouseup - quando o botão do mouse é solto
+click - quando é feito um clique rápido
+mouseout - quando o cursor sai do elemento
 
 
 
