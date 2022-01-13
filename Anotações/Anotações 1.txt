@@ -90,11 +90,52 @@ mouseup - quando o botão do mouse é solto
 click - quando é feito um clique rápido
 mouseout - quando o cursor sai do elemento
 
+Estruturas condicionais:
+if(condição){
+    true
+} else {
+    false
+}
 
+Tipos de condição
+- Condição Simples: apenas 1 tipo de bloco
+  if (condição){
+      true
+  }
 
+- Condição Composta: com 2 tipos de blocos
+ if (condição){
+     true
+ } else {
+     false
+ }
 
+- Condições Aninhadas: Condições dentro de outras condições
+ if (condição 1){
+     bloco 1
+ } else if (condição 2){
+        bloco 2
+ } else {
+        bloco 3
+ }
 
+- Condições múltiplas: Condições com possibilidade de outros valores
+switch (expressão){
+    case valor 1:
+        bloco 1
+        break
+    case valor 2:
+        bloco 2
+        break
+    case valor 3:
+        bloco 3
+        break
+    default:
+        bloco final 
+        break
+}
 
+OBS.: É necessário colocar o 'break' após cada bloco do case (no caso do default não é essencial)
 
 
 
